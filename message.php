@@ -34,8 +34,8 @@ try {
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'bilalsahli1999@gmail.com';                     //SMTP username
     $mail->Password   = 'peaceman';                               //SMTP password
-    $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-    $mail->Port       = 25; 
+    $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
+    $mail->Port       = 465; 
     $mail->SMTPDebug = 2;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`        $name = $_POST['name']; 
     
     $name = $_POST['name']; 
