@@ -45,9 +45,11 @@ var typed = new Typed(".typing-2", {
 
 const form= document.querySelector("form"),
       statusTxt = form.querySelector(".button-area span"); 
-
+/*
+Desactivated This form because of the restrictions the server hosts impose on email sending via Phpmailer. Those restrictions are imposed 
+to fight email spams. I am using now the email api from "formsubmit.co". 
 form.onsubmit=(e) => {
-    e.preventDefault(); //preventing form from submitting 
+  //  e.preventDefault(); //preventing form from submitting 
     statusTxt.style.color = "#0D6EFD"; 
     statusTxt.style.display="block"; 
     
@@ -73,3 +75,4 @@ form.onsubmit=(e) => {
     xhr.send(formData); //sending form data 
 }
 
+*/
